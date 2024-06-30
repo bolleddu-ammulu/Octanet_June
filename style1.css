@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #f0f4f8;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.hdqwalls.com/download/4k-baby-groot-2020-gw-1366x768.jpg);
+    padding: 20px;
+}
+.do {
+    width: 100%;
+    max-width: 640px;
+    background: linear-gradient(135deg, #0ffc429f 0%, #01f6e6 100%);
+    padding: 40px 30px 70px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.do:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.do h2 {
+    color: #1629a1da;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#input {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    
+    
+}
+button {
+    border: none;
+    outline: none;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    background-color: #a5e650;
+    transform: translateY(-2px);
+}
+ul {
+    margin-top: 20px;
+}
+ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 13px 20px;
+    background-color: #f5f7fa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+ul li:hover {
+    background-color: #e4e9f1;
+}
+ul li.checked {
+    color: #b0b3c1;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff6f61;
+}
+ul li span {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ff6f61;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+ul li span:hover {
+    background-color: #ff6f61;
+    color: white;
+}
